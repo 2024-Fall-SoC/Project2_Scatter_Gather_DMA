@@ -24,6 +24,12 @@ module DMAC_TOP_TB ();
         rst_n                   = 1'b1;     // release the reset
     end
 
+    //set random seed
+    initial begin
+        int seed = 12345;
+        $urandom(seed);
+    end
+
     // enable waveform dump
     initial begin
         $dumpvars(0, u_DUT);
