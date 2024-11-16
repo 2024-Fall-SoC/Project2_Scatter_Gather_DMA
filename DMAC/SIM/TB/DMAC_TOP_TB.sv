@@ -27,7 +27,8 @@ module DMAC_TOP_TB ();
     //set random seed
     initial begin
         int seed = 12345;
-        $urandom(seed);
+	int random_value;
+        random_value = $urandom(seed);
     end
 
     // enable waveform dump
