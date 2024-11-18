@@ -19,7 +19,7 @@ module SGDMAC_CFG
     output  reg                 pslverr_o,
 
     // configuration registers
-    output  reg     [31:0]      start_addr_o,
+    output  reg     [31:0]      start_pointer_o,
     output  wire                start_o,
     input   wire                done_i
 );
