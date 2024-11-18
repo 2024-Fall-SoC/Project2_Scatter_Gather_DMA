@@ -8,7 +8,7 @@ module AXI_SLAVE
     parameter AWREADY_DELAY     = 1,
     parameter ARREADY_DELAY     = 1,
     parameter AR2R_DELAY        = 50,
-    parameter AR2R_DELAY_SAMEID = 200
+    parameter AR2R_DELAY_SAMEID = 60
 )
 (
     input   wire                clk,
