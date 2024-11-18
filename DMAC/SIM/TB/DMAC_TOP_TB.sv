@@ -500,12 +500,12 @@ module DMAC_TOP_TB ();
         check_scatter(descriptor_start_pointer, descriptor_length);
 
         $display("test completed");
-        $display("<< Test 0 time: %d (ns)", time_0);
-        $display("<< Test 1 time: %d (ns)", time_1);
-        $display("<< Test 2 time: %d (ns)", time_2);
-        $display("<< Test 3 time: %d (ns)", time_3);
-        $display("<< Test 4 time: %d (ns)", time_4);
-        $display("<< Test 5 time: %d (ns)", time_5);
+	$display("<< Test 1 time: %d (ns)", time_0);
+	$display("<< Test 2 time: %d (ns)", time_1);
+	$display("<< Test 3 time: %d (ns)", time_2);
+	$display("<< Test 4 time: %d (ns)", time_3);
+	$display("<< Test 5 time: %d (ns)", time_4);
+	$display("<< Test 6 time: %d (ns)", time_5);
         $finish;
     end
 
