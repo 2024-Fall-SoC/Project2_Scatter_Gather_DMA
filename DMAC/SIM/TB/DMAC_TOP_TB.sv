@@ -241,7 +241,7 @@ module DMAC_TOP_TB ();
         data = 0;
         while (data!=1) begin
             apb_if.read(`STAT_ADDR, data);
-            repeat (100) @(posedge clk);
+            repeat (10) @(posedge clk);
         end
         @(posedge clk);
         elapsed_time = $realtime - elapsed_time;
